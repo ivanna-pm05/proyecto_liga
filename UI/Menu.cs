@@ -88,7 +88,7 @@ namespace proyecto_liga.UI
             """);
         }
 
-         public static void StadisticMenu()
+        public static void StadisticMenu()
         {
             Console.Clear();
             Console.WriteLine("""
