@@ -12,7 +12,7 @@ namespace proyecto_liga.UI
             Console.Clear();
             Console.WriteLine("""
             +====================================+
-            |      Administrador de Torneos      |
+            | ⚜️   Administrador de Torneos   ⚜️ |
             +====================================+
             | 1) Crear Torneo                    |
             | 2) Registro Equipos                |
@@ -29,7 +29,7 @@ namespace proyecto_liga.UI
             Console.Clear();
             Console.WriteLine("""
             +====================================+
-            |             Menu Torneos           |
+            |     ⚽     Menu Torneos     ⚽     |
             +====================================+
             | 1) Add Torneo                      |
             | 2) Buscar Torneos                  |
@@ -93,7 +93,7 @@ namespace proyecto_liga.UI
             Console.Clear();
             Console.WriteLine("""
             +====================================+
-            |          Menu Estadisticas         |
+            |  📊      Menu Estadisticas     📊  |
             +====================================+
             | 1) Jugadores con mas Asistencias   |
             | 2) Equipos con mas Goles           |

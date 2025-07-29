@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using proyecto_liga.Tournament;
 using proyecto_liga.UI;
 
 namespace proyecto_liga.Function
@@ -48,6 +49,7 @@ namespace proyecto_liga.Function
             switch (selection)
             {
                 case "1":
+                    TournamentMenu.AddTournaments();
                     break;
                 case "2":
                     break;

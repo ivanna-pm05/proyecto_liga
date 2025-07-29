@@ -35,7 +35,7 @@ namespace proyecto_liga.Tournament
     {
         public static void AddTournaments()
         {
-            int id= 0;
+            int id = 0;
             string name = "";
 
             while (true)
@@ -60,9 +60,33 @@ namespace proyecto_liga.Tournament
                         {
                             Console.WriteLine("Volviendo al Menu Principal.");
                             Console.ReadKey();
+                            Menu.MenuPrincipal();
+                            break;
+                        }
+                        if (seleccion == "n")
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Escoga una de las opciones.");
+                            Console.ReadKey();
                         }
                     }
                 }
+                else
+                {
+                    break;
+                }
+            }
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("""
+                __________________________________
+                |Ingresar Nombre del Nuevo Torneo|
+                ->
+                """);
             }
         }
     }
