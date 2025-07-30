@@ -11,7 +11,8 @@ namespace proyecto_liga.Function
     {
         public static void MainFunction()
         {
-            Menu.MenuPrincipal();
+            IMenu mainMenu = new MainMenu();
+            MenuManager.MostrarMenu(mainMenu);
             Console.Write("Seleccione una opcion-> ");
             string? selection = Console.ReadLine();
             switch (selection)
@@ -43,7 +44,8 @@ namespace proyecto_liga.Function
 
         public static void TournamentFunction()
         {
-            Menu.TournamentMenu();
+            IMenu tornamentMenu = new TournamentMenu();
+            MenuManager.MostrarMenu(tournamentMenu);
             Console.Write("Seleccione una opcion->");
             string? selection = Console.ReadLine();
             switch (selection)
@@ -70,7 +72,8 @@ namespace proyecto_liga.Function
 
         public static void TeamFunction()
         {
-            Menu.TeamMenu();
+            IMenu mainMenu = new MainMenu();
+            MenuManager.MostrarMenu(mainMenu);
             Console.Write("Seleccione una opcion-> ");
             string? selection = Console.ReadLine();
             switch (selection)

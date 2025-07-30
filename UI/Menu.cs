@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace proyecto_liga.UI
 {
-    public class Menu
+    public class MainMenu : IMenu
     {
-        public static void MenuPrincipal()
+        public void Show()
         {
             Console.Clear();
             Console.WriteLine("""
@@ -23,8 +23,11 @@ namespace proyecto_liga.UI
             +====================================+
             """);
         }
+    }
 
-        public static void TournamentMenu()
+    public class TournamentMenu : IMenu
+    {
+        public void Show()
         {
             Console.Clear();
             Console.WriteLine("""
@@ -39,8 +42,11 @@ namespace proyecto_liga.UI
             +====================================+
             """);
         }
+    }
 
-        public static void TeamMenu()
+    public class TeamMenu : IMenu
+    {
+        public void Show()
         {
             Console.Clear();
             Console.WriteLine("""
@@ -57,8 +63,11 @@ namespace proyecto_liga.UI
             +====================================+
             """);
         }
+    }
 
-        public static void PlayersMenu()
+    public class PlayersMenu : IMenu
+    {
+        public void Show()
         {
             Console.Clear();
             Console.WriteLine("""
@@ -73,8 +82,11 @@ namespace proyecto_liga.UI
             +====================================+
             """);
         }
+    }
 
-        public static void TransactionMenu()
+    public class TransactionMenu : IMenu
+    {
+        public void Show()
         {
             Console.Clear();
             Console.WriteLine("""
@@ -87,8 +99,11 @@ namespace proyecto_liga.UI
             +====================================+
             """);
         }
+    }
 
-        public static void StadisticMenu()
+    public class StatisticMenu : IMenu
+    {
+        public void Show()
         {
             Console.Clear();
             Console.WriteLine("""
@@ -97,13 +112,14 @@ namespace proyecto_liga.UI
             +====================================+
             | 1) Jugadores con mas Asistencias   |
             | 2) Equipos con mas Goles           |
-            | en contra del Torneo               |
+            |    en contra del Torneo            |
             | 3) Jugadores mas Caros x Equipos   |
             | 4) Jugadores < Promedio de         |
-            | Edad x Equipo                      |
+            |    Edad x Equipo                   |
             | 5) Salir al Menu Principal         |
             +====================================+
             """);
         }
     }
+
 }
